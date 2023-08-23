@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import Left from "./Left";
+import Right from "./Right";
+import "./App.css";
 function App() {
+  const [box, setBox] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <h1 className="text-center">Color Changer</h1>
+      <div className="row">
+        <Left setBox={setBox} />
+        <Right selectedbox={box} />
+      </div>
     </div>
   );
 }
-
 export default App;
