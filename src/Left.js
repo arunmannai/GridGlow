@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 function Left(props) {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   function handleInputChange(event) {
     setValue(+event.target.value);
   }
@@ -19,12 +19,15 @@ function Left(props) {
       <form onSubmit={handleSubmit}>
         <input
           type="number"
-          className="form-control"
+          className="form-control text-center"
           value={value}
           onChange={handleInputChange}
+          min="1"
+          max="9"
+          step="1"
         />
         <div className="text-center mt-4">
-          <button type="submit" className="btn btn-outline-success">
+          <button type="submit" className="btn btn-outline-success btn-lg">
             Color Me
           </button>
         </div>
