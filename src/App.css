@@ -6,3 +6,10 @@ td {
 .btn {
   border-radius: 50px;
 }
+input {
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d1e7de !important;
+  color: black !important;
+}
