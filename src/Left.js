@@ -12,6 +12,7 @@ function Left(props) {
     } else {
       alert("Number should be between 1 and 9");
       props.setBox(0);
+      setValue("");
     }
   }
   return (
@@ -22,9 +23,6 @@ function Left(props) {
           className="form-control text-center"
           value={value}
           onChange={handleInputChange}
-          min="1"
-          max="9"
-          step="1"
         />
         <div className="text-center mt-4">
           <button type="submit" className="btn btn-outline-success btn-lg">
