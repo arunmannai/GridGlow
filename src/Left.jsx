@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 function Left(props) {
   const [value, setValue] = useState("");
   function handleInputChange(event) {

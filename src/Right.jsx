@@ -1,5 +1,3 @@
-import React from "react";
-
 function Right(props) {
   return (
     <div className="col-sm-6 p-3">
